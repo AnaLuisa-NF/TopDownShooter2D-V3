@@ -56,9 +56,9 @@ public class PlayerMovemente : MonoBehaviour
 
     private void AdjustPlayerFacingDirection()
     {
-        Vector3 mousePos = inut.mousePosition;
+        Vector3 mousePos = Input.mousePosition;
         Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(transform.position);
-        if (mousePos.x , playerScreenPoint.x)
+        if (mousePos.x < playerScreenPoint.x)
         {
             mySpriteRenderer.flipX = true;
         }
